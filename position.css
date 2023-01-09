@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    height: 100vh;
+    gap: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-grow: 1;
+}
+.cell{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+.yellow{
+    background-color: #F6CA59;
+}
+.red{
+    background-color: #EA4F6C;
+}
+.purple{
+    background-color: #717DF6;
+}
+@media screen and (max-width:768px) {
+    #third_line{
+        flex-direction: column;
+    }
+    #toRemove{
+        display: none;
+    }
+}
+@media screen and (max-width:320px) {
+    #first_line{
+        flex-direction: column;
+    }
+}
